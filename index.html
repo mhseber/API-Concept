@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Concept</title>
+    <style>
+        #post-container {
+            max-width: 1160px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .post-card {
+            border: 1px solid #3d2323;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .post-card p {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <h1>API Concept</h1>
     <button onclick="loadData()">Load Data</button>
     <button onclick="loadPost()">Load Post</button>
 
-    <ul id="post-container">POsts</ul>
+    <div id="post-container">
+      
+    </div>
 
 <script src="./json-data.js"></script>
 <script src="./posts.js"></script>
